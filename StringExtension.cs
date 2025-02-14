@@ -30,5 +30,11 @@ namespace FrameworkExtensions
                 return input.Trim();
             }
         }
+
+        public static bool pAny(this string s)
+        {
+            bool any = (s != null && s.Trim() != "");
+            return any;
+        }
     }
 }
